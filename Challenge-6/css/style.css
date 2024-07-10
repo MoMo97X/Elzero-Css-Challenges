@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 50px;
+    left: 25%;
+    font-weight: bold;
+}
+
+a::before {
+    content: "";
+    width: 150px;
+    padding: 20px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+a[href*='courses'] {
+    color: springgreen;
+}

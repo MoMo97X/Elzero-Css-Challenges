@@ -1,0 +1,92 @@
+* {
+    padding: 1%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* outsider list - container -  */
+ul:not(li ul:first-child) {
+    width: 600px;
+    height: fit-content;
+    background-color: #eee;
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* all item-list except the 4th li */
+ul li:not(li:nth-child(4)) {
+    display: flex;
+    align-items: center;
+}
+
+/* insider list - inner container - */
+ul li ul:first-child {
+    background-color: none;
+    list-style-type: none;
+}
+
+/* all item-list for insider and outsider - list */
+li {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    margin-bottom: 1%;
+    padding-left: 8%;
+    position: relative;
+    counter-increment: num-1;
+}
+
+/* the item-list before for outsider-list */
+li::before {
+    content: counter(num-1);
+    width: 6%;
+    height: 80%;
+    background-color: #ddd;
+    position: absolute;
+    top: center;
+    left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the inner list ul */
+ul li:nth-child(4) ul {
+    margin-top: 1%;
+    margin-left: -5%;
+}
+
+/* the 4th child of the outsider list */
+ul li:nth-child(4) {
+    background-color: #ddd;
+    padding: 2% 0 2% 8%;
+}
+
+/* the item-list of the inner ul of the 4th li */
+ul li:nth-child(4) ul li {
+    counter-increment: num-2;
+    width: 95%;
+    padding-left: 12%;
+    display: flex;
+    align-items: center;
+}
+
+/* the item-list for the 4th li inner-list */
+ul li:nth-child(4) ul li::before {
+    width: 9%;
+    content: "4." counter(num-2);
+    background-color: darkcyan;
+    color: white;
+}
+
+/* the item-list before for the 4th child of the outsider-list */
+ul li:nth-child(4)::before {
+    height: 20%;
+    background-color: white;
+    color: black;
+    top: 2%;
+}

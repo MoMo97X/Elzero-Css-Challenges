@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin: 50px auto;
+    background-color: #ddd;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    perspective: 400px;
+}
+
+.menu span {
+    width: 160px;
+    height: 30px;
+    margin: -40px 0;
+    position: relative;
+    transition: transform 0.5s linear, opacity 1s linear;
+    transform-style: preserve-3d;
+}
+
+/* face */
+span::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    background-color: black;
+}
+
+/*back*/
+span::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkred;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+
+.menu:hover span:first-child {
+    transform: translateY(35px) rotateZ(45deg) rotate3d(0, 1, 0, -180deg);
+}
+
+.menu:hover span:last-child {
+    transform: translateY(-35px) rotateZ(-45deg) rotate3d(0, 1, 0, 180deg);
+}
+
+/*Second span animation */
+.menu:hover span:nth-child(2) {
+    transform: translate(-180px);
+    opacity: 0;
+}
+
+.menu:hover span:nth-child(2)::after {
+    background-color: darkred;
+}

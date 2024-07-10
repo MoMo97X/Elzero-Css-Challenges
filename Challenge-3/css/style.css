@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 50px auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border: 1px solid darkred;
+}
+
+.font {
+    font: italic bold 30px/30px Arial, sans-serif;
+}
