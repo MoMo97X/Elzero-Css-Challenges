@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    width: 80%;
+    height: 90vh;
+    margin: 30px auto;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.personal,
+.business,
+.enterprise {
+    width: 90%;
+    height: 90%;
+    border: 1.5px solid #ccc;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.most-pupolar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 8%;
+    background-color: #197beb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.most-pupolar::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: -5%;
+    border: 13px solid;
+    border-color: transparent transparent transparent darkblue;
+    transform: rotate(45deg);
+}
+
+
+.most-pupolar::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: -5%;
+    border: 13px solid;
+    border-color: transparent darkblue transparent transparent;
+    transform: rotate(-45deg);
+}
+
+h2 {
+    margin-top: 11.5%;
+}
+
+p {
+    width: auto;
+    color: #c9c9c9;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 0.9em;
+    word-spacing: -2px;
+}
+
+.price span {
+    background-color: transparent;
+    color: #197beb;
+    font-size: 0.5in;
+    font-weight: bold;
+}
+
+.price span:first-child {
+    font-size: x-large;
+    align-self: flex-start;
+}
+
+.paragraphs span {
+    color: #888888;
+    margin-right: 8px;
+}
+
+.button {
+    width: auto;
+    padding: 15px 30px;
+    color: white;
+    background-color: #197beb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    margin-top: 5%;
+}

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: bold 18px Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ddd;
+}
+
+a:first-child::before {
+    content: "Name:Google | URL: https://google.com";
+    width: 600px;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #2196f3;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+a:nth-child(2)::before {
+    content: "Name: Elzero Academy | URL: https://elzero.org";
+    width: 600px;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #2196f3;
+    position: absolute;
+    top: 65%;
+    left: 42%;
+    transform: translate(-50%, -65%);
+}
+
+a:last-child::before {
+    content: "Name:Elzero Courses | URL: https://www.elzero.courses/";
+    width: 600px;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #2196f3;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -80%);
+}
