@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: .05em;
+}
+
+div {
+    /*     --borderWidth: 10px;
+ */
+    width: 400px;
+    padding: 20px;
+    margin: 200px auto;
+    background-color: #ddd;
+    text-align: center;
+    /*     border: var(--borderWidth) solid black; */
+    box-shadow:
+        0 0 0 10px darkblue,
+        0 0 0 20px darkred,
+        0 0 0 30px darkgreen,
+        0 0 0 40px darkmagenta,
+        0 0 0 50px darkorange,
+        0 0 0 60px darkcyan,
+        0 0 0 70px darkslateblue,
+        0 0 0 80px darkviolet;
+}

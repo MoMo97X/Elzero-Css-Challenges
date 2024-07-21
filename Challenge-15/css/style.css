@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    width: 600px;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+    -webkit-text-stroke: 1.5px #9c27b0;
+}

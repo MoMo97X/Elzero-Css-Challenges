@@ -1,3 +1,154 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: #eee;
+}
+
+/* CAMERA */
+.camera {
+    width: 500px;
+    height: 320px;
+    background-color: #939185;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.camera::after {
+    content: "";
+    width: 100%;
+    height: 135px;
+    background-color: #17153B;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* FLASH */
+.flash {
+    width: 120px;
+    height: 60px;
+    background-color: #17153B;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 9px 9px 0rem 0rem;
+}
+
+.flash-in {
+    width: 80%;
+    height: 30px;
+    background-color: #939185;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.flash-in-2 {
+    width: 35%;
+    height: 15px;
+    background-color: #17153B;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.flash::after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: -15%;
+    background-color: #17153B;
+    transform: skewX(11deg);
+    border-radius: 0rem 1rem 0rem 0rem / 0rem 1rem 0rem 0rem;
+}
+
+.flash::before {
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -15%;
+    background-color: #17153B;
+    transform: skewX(-11deg);
+    border-radius: 1rem 0rem 0rem 0rem / 1rem 0rem 0rem 0rem;
+}
+
+
+
+/* BUTTONS */
+.button {
+    width: 10%;
+    height: 5%;
+    background-color: #17153B;
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.button::before {
+    content: "";
+    width: 70%;
+    height: 30%;
+    background-color: #433D8B;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* LENS'S */
+.lens {
+    width: 80px;
+    height: 80px;
+    background-color: #131842;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.lens::before {
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: #758694;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.big-lens {
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: 10px solid #EEEDEB;
+    outline: 10px solid #2F3645;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}

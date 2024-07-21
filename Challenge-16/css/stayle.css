@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: #eeeeee;
+}
+
+caption {
+    background-color: #cccccc;
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+table {
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    background-color: #eeeeee;
+}
+
+thead {
+    background-color: #cccccc;
+    font-weight: bold;
+}
+
+tfoot td {
+    background-color: #009FBD;
+    color: white;
+}
+
+tfoot td[colspan] {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+td {
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: white;
+}
+
+th {
+    width: fit-content;
+    padding: 20px;
+    font-size: 0.8rem;
+}

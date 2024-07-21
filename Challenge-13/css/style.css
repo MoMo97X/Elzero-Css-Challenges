@@ -73,16 +73,24 @@
     text-transform: capitalize;
 }
 
-.first:hover,
+/* .first:hover, */
 .second:hover,
 .third:hover {
     border: 2px solid #3171ff;
 }
 
-.first:hover div.ball,
+/* .first:hover div.ball, */
 .second:hover div.ball,
 .third:hover div.ball {
     background-color: #3171ff;
+}
+
+.first:active div.ball {
+    background-color: #3171ff;
+}
+
+.first:active {
+    border: 2px solid #3171ff;
 }
 
 .price {
